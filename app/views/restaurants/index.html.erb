@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="my-5">Restaurants</h1>
+  <div class="row cards">
+    <% @restaurants.each do |restaurant| %>
+      <div class="col-6 col-lg-4 ">
+        <div class="card-pick">
+        <img src="https://loremflickr.com/g/320/240/restaurant" alt="">
+        <%= link_to restaurant_path(restaurant) do %>
+          <div class="card-pick-info">
+            <h3><%= restaurant.name %></h3>
+            <p class="phone-number"><%= restaurant.phone_number %></p>
+            <p><%= restaurant.address %></p>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

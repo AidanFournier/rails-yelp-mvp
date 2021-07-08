@@ -1,0 +1,14 @@
+<div class="container">
+  <div class='d-flex align-items-center m-3 ' >
+    <%= image_tag "logo/open.svg" %>
+    <h1 class='ml-5 pt-5'>Add a restuarant </h1>
+  </div>
+
+  <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category %>
+    <%= f.submit %>
+  <% end %>
+</div>

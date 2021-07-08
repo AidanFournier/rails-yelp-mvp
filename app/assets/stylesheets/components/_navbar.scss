@@ -1,0 +1,22 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+  padding-right: 10px;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 50px;
+}
+
+#menu-item {
+  color: rgb(134, 200, 222);
+}
+
+.navbar-toggler {
+  width:  50px;
+  border: none;
+}
